@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="img/icon/Ellipse-3.ico" rel="shortcut icon">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="feedback/css/feedback-form.css">
+      <link rel="stylesheet" href="css/style.css">
+      <title>DOGRUZOVOZ</title>
+   </head>
+   <body>
+      <header class="main-header">
+         <div class="container burger-menu">
+            <h1 class="main-header__title">DOGRUZOVOZ</h1>
+            <p class="main-header__tagline">Транспортные услуги для вас</p>
+            <a href="" class="burger-menu_button">
+            <span class="burger-menu_lines"></span>
+            </a>
+            <nav class="main-navigation burger-menu_nav">
+               <ul class="main-navigation__list">
+                  <li class="main-navigation__item"><a class="main-navigation__link burger-menu_link" href="#about">О компании</a></li>
+                  <li class="main-navigation__item"><a class="main-navigation__link burger-menu_link" href="#services">Услуги</a></li>
+                  <li class="main-navigation__item main-navigation__item-top"><a class="main-navigation__link main-navigation__link-top burger-menu_link" href="#fos">Контакты</a></li>
+                  <li class="main-navigation__item main-navigation__item-bottom"><a class="main-navigation__link main-navigation__link-bottom burger-menu_link" href="#services-logic">Логистика</a></li>
+                  <li class="main-navigation__item"><a class="main-navigation__link burger-menu_link" href="#fos">Заявка</a></li>
+               </ul>
+            </nav>
+            <div class="burger-menu_overlay"></div>
+         </div>
+      </header>
+      <main>
+         <section class="about" id="about">
+            <div class="container">
+               <h2 class="about__title title">О компании</h2>
+               <p class="about__tagline tagline tablet-mobile-width">Цель компании «ДОГРУЗОВОЗ» — предоставление квалифицированных транспортных услуг по доступным ценам на всей территории нашей необъятной страны. Наш отлаженный и надежный сервис позволит вам уделить больше времени тому, что действительно важно. В остальном можете положиться на нас. Мы отлично знаем свою работу, поэтому вы можете расслабиться и отдохнуть во время поездки — мы без проблем доставим вас в указанное место.</p>
+            </div>
+         </section>
+         <section class="services" id="services">
+            <div class="container">
+               <h2 class="title">Предоставляемые услуги</h2>
+               <div class="services__wrapper">
+                <img src="img/servises-truck-1.jpg" alt="грузовоз">
+                <div class="services__column tablet-mobile-width">
+                   <h3 class="title">Давайте начнем !</h3>
+                   <p class="tagline">Ваш груз нужно отправить в другой город? Мы к вашим услугам. Компания «ДОГРУЗОВОЗ» и ее команда доступны в любое время. С 2013 года наша компания стремится быть лучшей в своей сфере. Полный перечень наших услуг представлен ниже.</p>
+                </div>
+               </div>
+               <p class="services__tagline tagline tablet-mobile-width">«ДОГРУЗОВОЗ» — это Грузоперевозки догрузом по всей территории РФ. Наша преданная делу команда упорно работает, чтобы обеспечить транспортное обслуживание высшего класса. Ознакомьтесь с полным списком услуг и свяжитесь с нами, если появятся вопросы.</p>
+            </div>
+         </section>
+         <section class="services-logic" id="services-logic">
+            <div class="container">
+               <h2 class="title">Логистические услуги</h2>
+               <p class="tagline services-logic__tagline">Главным преимуществом нашей компании является сотрудничество с надежными, проверенными временем транспортными компаниями и частными перевозчиками. Заказчик в кратчайшие сроки получает возможность отправить свой груз по месту назначения, будь то частный или коммерческий груз. Отсутствие лишних манипуляций с грузом сокращает время всей операции с возможностью доставки день в день. Оплата осуществляется после доставки груза. Обратитесь к нам и вы не разочаруетесь в качестве услуг, которые мы предлагаем по приемлемой цене. Свяжитесь с нами, чтобы получить подробную информацию или забронировать доставку.</p>
+            </div>
+         </section>
+         <section class="fos" id="fos">
+            <div class="container">
+               <div class="fos__wrapper">
+                  <div class="fos__column">
+                     <h2 class="title">Мы ждем вашего звонка</h2>
+                     <div class="form-container form__wrapper">
+                        <form class="form" id="feedback-form" action="/feedback/form-processing.php" enctype="multipart/form-data" novalidate>
+                           <div class="form-row">
+                              <div class="form-group">
+                                 <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2"
+                                    maxlength="30" required="required">
+                                 <div class="invalid-feedback"></div>
+                              </div>
+                              <div class="form-group">
+                                 <input id="tel" type="tel" name="tel" required="required" class="form-control" value=""
+                                    placeholder="Телефон">
+                                 <div class="invalid-feedback"></div>
+                              </div>
+                              <div class="form-group">
+                                 <input id="address" type="text" name="address" required="required" class="form-control" value=""
+                                    placeholder="Адрес">
+                                 <div class="invalid-feedback"></div>
+                              </div>
+                              <div class="form-submit">
+                                 <button type="submit">Отправить</button>
+                              </div>
+                           </div>
+                           <div class="form-row">
+                              <div class="form-group">
+                                 <input id="email" type="email" name="email" required="required" class="form-control" value=""
+                                    placeholder="Почта">
+                                 <div class="invalid-feedback"></div>
+                              </div>
+                              <div class="form-group">
+                                 <textarea id="message" name="message" class="form-control form-control__textarea" rows="3"
+                                    placeholder="Добавьте сообщение" maxlength="500"
+                                    required="required"></textarea>
+                                 <div class="invalid-feedback"></div>
+                              </div>
+                           </div>
+                           <!-- Сообщение об ошибке -->
+                           <div class="form-error form-error_hide">Исправьте данные и отправьте форму ещё раз.</div>
+                        </form>
+                        <!-- Сообщение об успешной отправки формы -->
+                        <div class="form-success form-success_hide">
+                           <div class="form-success__message">Форма успешно отправлена. Нажмите <button type="button"
+                              class="form-success__btn">здесь</button>, если нужно отправить ещё одну форму.</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="fos__column">
+                     <h2 class="title">Контакты</h2>
+                     <div class="fos-contacts">
+                        <a href="tel:+79169003800">8-(916)-900-38-00</a> <br>
+                        <a href="mailto:dogruzuvoz@mail.ru">dogruzuvoz@mail.ru</a> <br> <br>
+                        <a href="tel:+79257771317">8-(925)-777-13-17</a> <br>
+                        <a href="mailto:kopanev_py@mail.ru">kopanev_py@mail.ru</a> <br>
+                     </div>
+                  </div>
+               </div>
+               <div class="fos__map">
+                  <div class="form-submit map-submit">
+                     <a href="https://yandex.ru/maps/-/CCUVFPTmkD" target="_blank">Найти нас</a>
+                  </div>
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10758/himki/?utm_medium=mapframe&utm_source=maps" style="color:rgb(58, 79, 117);font-size:12px;position:absolute;top:0px;">Химки</a><a href="https://yandex.ru/maps/10758/himki/house/spartakovskaya_ulitsa_3_8/Z04YcgNoS0YGQFtvfXR5dHVkbQ==/?ll=37.448231%2C55.885979&utm_medium=mapframe&utm_source=maps&z=17.13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Спартаковская улица, 3/8 на карте Химок — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVFTteLD" width="1720" height="420" style="position:relative;"></iframe></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="main-footer">
+         <div class="container">
+            <h2 class="main-header__title main-footer__title">DOGRUZOVOZ</h2>
+            <p class="main-footer__host-name">Индивидуальный предприниматель - Пашков Сергей Петрович</p>
+            <a href="mailto:dogruzuvoz@mail.ru">dogruzuvoz@mail.ru</a> <br>
+            <a href="tel:+79169003800">8-(916)-900-38-00</a> <br>
+            <a href="mailto:kopanev_py@mail.ru">kopanev_py@mail.ru</a> <br>
+            <a href="tel:+79257771317">8-(925)-777-13-17</a> <br><br>
+            <p class="tagline main-footer__tagline">ИНН - 581304034551</p>
+            <p class="tagline main-footer__tagline">ОГРН - 311504726500046</p>
+            <p class="tagline main-footer__tagline">Карта СБ - 5469 3800 1713 5863 - Сергей Петрович П</p>
+            <p class="tagline main-footer__tagline">КОД - 652791АТИ</p>
+            <br><br>
+            <p class="tagline main-footer__tagline">Номер счёта - 40802810738000026347</p>
+            <p class="tagline main-footer__tagline">Банк получателя -  ПАО СБЕРБАНК</p>
+            <p class="tagline main-footer__tagline">БИК - 044525225</p>
+            <p class="tagline main-footer__tagline">Кор.счет - 30101810400000000225</p>
+         </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="/feedback/js/form-processing.js"></script>
+      <script>
+         /*
+           attachMaxItems: 3,
+           attachMaxFileSize: 128,
+           attachExt: ['png', 'jpg']
+         */
+
+         const form = new ItcSubmitForm('form');
+
+         // при получении ответа result="success" от сервера
+         document.querySelector('form').addEventListener('success', (e) => {
+           const el = e.target.closest('.form-container').querySelector('.form-success');
+           el.classList.remove('form-success_hide');
+         });
+
+         // при клике на .form-success__btn
+         document.querySelector('.form-success__btn').addEventListener('click', (e) => {
+           form.reset();
+           e.target.closest('.form-container').querySelector('.form-success').classList.add('form-success_hide');
+         })
+      </script>
+   </body>
+</html>
